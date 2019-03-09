@@ -102,7 +102,7 @@ l:
 				if err == nil && sig != nil {
 					// remove signature from commit message
 					if sigindex == 0 {
-						cm = cm[:0]
+						cm = ""
 					} else {
 						cm = cm[:sigindex-1]
 					}
